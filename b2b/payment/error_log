@@ -1,0 +1,80 @@
+[02-Aug-2020 21:59:57 Asia/Kolkata] PHP Warning:  include(includes/head.php): failed to open stream: No such file or directory in /home/cpixelsn/cv.cpixels.me/b2b/payment/test-payment.php on line 12
+[02-Aug-2020 21:59:57 Asia/Kolkata] PHP Warning:  include(includes/head.php): failed to open stream: No such file or directory in /home/cpixelsn/cv.cpixels.me/b2b/payment/test-payment.php on line 12
+[02-Aug-2020 21:59:57 Asia/Kolkata] PHP Warning:  include(): Failed opening 'includes/head.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/cpixelsn/cv.cpixels.me/b2b/payment/test-payment.php on line 12
+[02-Aug-2020 22:00:50 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[02-Aug-2020 22:00:50 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[02-Aug-2020 22:00:50 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[02-Aug-2020 22:00:50 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[02-Aug-2020 23:22:27 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[02-Aug-2020 23:22:27 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[02-Aug-2020 23:22:27 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[02-Aug-2020 23:22:27 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[03-Aug-2020 15:12:22 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:12:22 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:12:22 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:12:22 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[03-Aug-2020 15:13:54 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:13:54 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:13:54 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:13:54 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[03-Aug-2020 15:55:16 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:55:16 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:55:16 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[03-Aug-2020 15:55:16 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[04-Aug-2020 11:29:15 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[04-Aug-2020 11:29:15 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[04-Aug-2020 11:29:15 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[04-Aug-2020 11:29:15 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[15-Aug-2020 11:50:46 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[15-Aug-2020 11:50:46 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[15-Aug-2020 11:50:46 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[15-Aug-2020 11:50:46 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[15-Aug-2020 11:59:04 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[15-Aug-2020 11:59:04 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[15-Aug-2020 11:59:04 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 16
+[15-Aug-2020 11:59:04 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 18
+[15-Aug-2020 19:54:17 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 17
+[15-Aug-2020 19:54:17 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 17
+[15-Aug-2020 19:54:17 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 17
+[15-Aug-2020 19:54:17 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 19
+[15-Aug-2020 19:56:24 Asia/Kolkata] PHP Notice:  Undefined variable: data in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 17
+[15-Aug-2020 19:56:24 Asia/Kolkata] PHP Notice:  Trying to get property 'cart' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 17
+[15-Aug-2020 19:56:24 Asia/Kolkata] PHP Notice:  Trying to get property 'item' of non-object in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 17
+[15-Aug-2020 19:56:24 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 19
+[15-Aug-2020 20:22:21 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[15-Aug-2020 20:22:21 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[15-Aug-2020 20:23:16 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[15-Aug-2020 20:23:16 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[15-Aug-2020 20:24:44 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[15-Aug-2020 20:30:25 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[16-Aug-2020 17:48:32 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[19-Aug-2020 17:24:16 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 17:26:44 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 20:31:10 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 20:35:10 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 20:37:29 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 20:38:43 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 20:39:54 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[19-Aug-2020 20:42:21 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 12:53:17 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[20-Aug-2020 12:57:46 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[20-Aug-2020 13:00:33 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[20-Aug-2020 13:14:26 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 13:18:19 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 13:21:50 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 13:22:45 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 13:25:42 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 13:28:03 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 13:28:41 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[20-Aug-2020 17:09:19 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[20-Aug-2020 17:09:29 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[22-Aug-2020 00:29:28 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[22-Aug-2020 00:30:03 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[22-Aug-2020 14:36:38 Asia/Kolkata] PHP Notice:  Undefined property: stdClass::$address_id in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 15
+[22-Aug-2020 14:39:42 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[22-Aug-2020 16:36:41 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[22-Aug-2020 16:40:28 Asia/Kolkata] PHP Notice:  Undefined property: stdClass::$address_id in /home/cpixelsn/cv.cpixels.me/b2b/database/order.Class.php on line 15
+[22-Aug-2020 17:15:56 Asia/Kolkata] PHP Notice:  Undefined index: data in /home/cpixelsn/cv.cpixels.me/b2b/payment/razor-start-payment.php on line 6
+[24-Aug-2020 10:41:03 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[24-Aug-2020 10:41:54 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42
+[30-Aug-2020 14:52:51 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home/cpixelsn/cv.cpixels.me/b2b/database/stock.Class.php on line 42

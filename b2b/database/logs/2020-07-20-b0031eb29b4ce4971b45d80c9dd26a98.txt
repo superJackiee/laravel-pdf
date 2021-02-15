@@ -1,0 +1,3 @@
+Time : 07:14:09
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cpixelsn_b2b.admin' doesn't exist
+Raw SQL : SELECT * FROM admin WHERE email=? and password=?

@@ -1,0 +1,15 @@
+Time : 16:54:03
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO user(user_id,first_name, last_name, email, password, contact_no, document_proof, additional_info, date_of_birth) VALUES(?,?,?,?,?,?,?,?,?)
+
+Time : 16:29:21
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO user(user_id,first_name, last_name, email, password, contact_no, document_proof, additional_info, date_of_birth) VALUES(?,?,?,?,?,?,?,?,?)
+
+Time : 16:28:49
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO user(user_id,first_name, last_name, email, password, contact_no, document_proof, additional_info, date_of_birth) VALUES(?,?,?,?,?,?,?,?,?)
+
+Time : 16:28:21
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO user(user_id,first_name, last_name, email, password, contact_no, document_proof, additional_info, date_of_birth) VALUES(?,?,?,?,?,?,?,?,?)

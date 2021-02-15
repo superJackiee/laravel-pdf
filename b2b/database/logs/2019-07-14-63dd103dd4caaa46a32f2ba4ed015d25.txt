@@ -1,0 +1,11 @@
+Time : 06:33:44
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'community_id' cannot be null
+Raw SQL : INSERT INTO `user_community_spam` (`community_id`, `to_user_id`, `by_user_id`) VALUES (?, ?, ?)
+
+Time : 06:33:42
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'community_id' cannot be null
+Raw SQL : INSERT INTO `user_community_spam` (`community_id`, `to_user_id`, `by_user_id`) VALUES (?, ?, ?)
+
+Time : 06:32:26
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'community_id' cannot be null
+Raw SQL : INSERT INTO `user_community_spam` (`community_id`, `to_user_id`, `by_user_id`) VALUES (?, ?, ?)

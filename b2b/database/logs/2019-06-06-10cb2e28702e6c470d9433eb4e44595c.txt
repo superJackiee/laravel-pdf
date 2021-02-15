@@ -1,0 +1,3 @@
+Time : 17:15:32
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_presence' cannot be null
+Raw SQL : INSERT INTO user_order(user_id, user_presence, notes, order_date, order_time) VALUES(?,?,?,?,?)

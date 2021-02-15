@@ -1,0 +1,15 @@
+Time : 09:04:44
+SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #22 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'flokq_development_db.cum.is_block' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Raw SQL : SELECT u.*, GROUP_CONCAT(c.channel_url) AS `channel_url`, cum.is_block  FROM `user` u 
+							   LEFT JOIN community_user_map cum ON cum.user_id = u.user_id
+							   LEFT JOIN community c ON c.community_id = cum.community_id
+							   WHERE u.`deleted` = 0 and u.status = 1
+							   GROUP BY u.user_id
+
+Time : 08:54:26
+SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #22 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'flokq_development_db.cum.is_block' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Raw SQL : SELECT u.*, GROUP_CONCAT(c.channel_url) AS `channel_url`, cum.is_block  FROM `user` u 
+							   LEFT JOIN community_user_map cum ON cum.user_id = u.user_id
+							   LEFT JOIN community c ON c.community_id = cum.community_id
+							   WHERE u.`deleted` = 0 and u.status = 1
+							   GROUP BY u.user_id

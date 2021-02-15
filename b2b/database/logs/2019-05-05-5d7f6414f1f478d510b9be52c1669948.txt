@@ -1,0 +1,14 @@
+Time : 17:47:02
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'reason' in 'field list'
+Raw SQL : UPDATE `inventory_user_map` SET `rent_end_date` = ? , status = 0, reason = ?, `update_date` = NOW() 
+			WHERE `map_id` = ?
+
+Time : 17:46:49
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'reason' in 'field list'
+Raw SQL : UPDATE `inventory_user_map` SET `rent_end_date` = ? , status = 0, reason = ?, `update_date` = NOW() 
+			WHERE `map_id` = ?
+
+Time : 17:46:27
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'reason' in 'field list'
+Raw SQL : UPDATE `inventory_user_map` SET `rent_end_date` = ? , status = 0, reason = ?, `update_date` = NOW() 
+			WHERE `map_id` = ?

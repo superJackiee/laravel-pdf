@@ -1,0 +1,15 @@
+Time : 18:12:57
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inventory_id' cannot be null
+Raw SQL : INSERT INTO `order_detail` (`order_id`, `parent`, `category`, `service`, `is_window_cleaning_required`, `total_cleaning_hours`, `inventory_id`, `inventory_room_id`) VALUES (?,?,?,?,?,?,?,?)
+
+Time : 16:55:32
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inventory_id' cannot be null
+Raw SQL : INSERT INTO `order_detail` (`order_id`, `parent`, `category`, `service`, `is_window_cleaning_required`, `total_cleaning_hours`, `inventory_id`, `inventory_room_id`) VALUES (?,?,?,?,?,?,?,?)
+
+Time : 16:46:28
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inventory_id' cannot be null
+Raw SQL : INSERT INTO `order_detail` (`order_id`, `parent`, `category`, `service`, `is_window_cleaning_required`, `total_cleaning_hours`, `inventory_id`, `inventory_room_id`) VALUES (?,?,?,?,?,?,?,?)
+
+Time : 16:45:59
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'inventory_id' cannot be null
+Raw SQL : INSERT INTO `order_detail` (`order_id`, `parent`, `category`, `service`, `is_window_cleaning_required`, `total_cleaning_hours`, `inventory_id`, `inventory_room_id`) VALUES (?,?,?,?,?,?,?,?)

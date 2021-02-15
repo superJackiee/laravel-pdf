@@ -1,0 +1,88 @@
+@extends('layouts.app')
+@section('content')
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">{{ __('msg.add_cv') }}</div>
+               <ul  >
+                @foreach($errors->all() as $e)
+                <li class="alert alert-danger">{{$e}}</li>
+                 @endforeach
+                </ul>
+                @if(Session::has('success'))
+   <div class="alert alert-success">
+       {{Session::get('success')}}
+   </div>
+@endif
+    <div class="card-body">
+                  <form action="save-cv" method="post">
+                    @csrf
+                  <div class="form-group row">
+                      <label for="name" class="col-lg-4 col-form-label text-md-right">{{ __('msg.job_category') }}</label>
+                      <div class="col-lg-6">
+                        <select name="job_category_id" class="form-control" required >
+
+                        <option value="1"> Information Technology</option>
+                        <option value="2"> Legal</option>
+                        </select>
+                      </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="name" class="col-lg-4 col-form-label text-md-right">{{ __('msg.resume_name') }}</label>
+                        <div class="col-lg-6">
+                          <input id="name" type="text" name="resume_name" value="" required="required" autocomplete="name" autofocus="autofocus" class="form-control ">
+                        </div>
+
+                      </div>
+
+                      <div class="form-group row">
+                          <label for="name" class="col-lg-4 col-form-label text-md-right">{{ __('msg.resume_language') }}</label>
+                          <div class="col-lg-6">
+                            <select name="resume_language_id" class="form-control" required >
+
+                            <option value="1">English</option>
+                            <option value="2"> Arabic</option>
+                            </select>                          </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="name" class="col-lg-4 col-form-label text-md-right">{{ __('msg.select_design') }}</label>
+                            <div class="col-lg-6">
+                              <select name="resume_templet_id" class="form-control" required >
+
+                              <option value="1">Basic </option>
+                              <option value="2"> Profesanal</option>
+                              </select>
+                              </div>
+                          </div>
+
+                          <div class="form-group row">
+                              <label for="name" class="col-lg-4 col-form-label text-md-right">{{ __('msg.experience_level') }}</label>
+                              <div class="col-lg-6">
+                                <select name="experience_level_id" class="form-control" required >
+
+                                <option value="1">Student/Junior(0-2 years)</option>
+                                <option value="2"> Senior(2-6 years)</option>
+                                  <option value="2"> Executive(+6 years)</option>
+                                </select>
+                                </div>
+                            </div>
+                          <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                              <button type="submit" class="btn btn-primary">{{ __('msg.submit') }}</button>
+                            </div></div>
+                      </form>
+                </div>
+             </div>
+            </div>
+
+
+
+    </div>
+</div>
+@endsection

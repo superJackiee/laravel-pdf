@@ -1,0 +1,15 @@
+Time : 15:47:41
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_presence' cannot be null
+Raw SQL : INSERT INTO user_order(user_id, user_presence, notes, order_date, order_time) VALUES(?,?,?,?,?)
+
+Time : 15:47:32
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_presence' cannot be null
+Raw SQL : INSERT INTO user_order(user_id, user_presence, notes, order_date, order_time) VALUES(?,?,?,?,?)
+
+Time : 15:47:07
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_presence' cannot be null
+Raw SQL : INSERT INTO user_order(user_id, user_presence, notes, order_date, order_time) VALUES(?,?,?,?,?)
+
+Time : 15:47:05
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_presence' cannot be null
+Raw SQL : INSERT INTO user_order(user_id, user_presence, notes, order_date, order_time) VALUES(?,?,?,?,?)

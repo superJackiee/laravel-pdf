@@ -1,0 +1,9 @@
+Time : 22:47:52
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO `user_addresses` (`user_id`, `address`, `city_id`, `state_id`, `pincode`) 
+			  			  		 VALUES (?,?,?,?,?)
+
+Time : 22:47:31
+SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+Raw SQL : INSERT INTO `user_addresses` (`user_id`, `address`, `city_id`, `state_id`, `pincode`) 
+			  			  		 VALUES (?,?,?,?,?)

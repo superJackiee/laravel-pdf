@@ -1,0 +1,996 @@
+<!doctype html>
+ <html lang="en" class="no-focus"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>CV | Dashboard</title>
+        <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">       
+        <link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+         <style>
+        #main-container, #page-footer {
+    overflow-x: scroll!important;
+}
+    </style>
+    </head>
+    
+    <body>
+        <!-- Page Container -->
+        <div id="page-container" class="side-scroll page-header-modern main-content-boxed">
+
+            <!-- Side Overlay-->
+            <aside id="side-overlay">
+                <!-- Side Overlay Scroll Container -->
+                <div id="side-overlay-scroll">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow">
+                        <div class="content-header-section align-parent">
+                            <!-- Close Side Overlay -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
+                                <span class="orange"><strong>x</strong></span>
+                            </button>
+                            <!-- END Close Side Overlay -->
+                        </div>
+                    </div>
+                    <!-- END Side Header -->
+
+                    <div class="content-side">
+                      <div class="block">
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout1">
+                           <a href="#" class="">Content</a>
+                        </button><hr class="mt-0">
+                      </div>
+                      <div class="block">
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="modal" data-target="#template">
+                           <a href="#" class="">Change Template</a>
+                        </button><hr class="mt-0">
+                      </div>
+                      <div class="block">
+                        <button type="button" class="btn btn-circle btn-dual-secondary">
+                           <a href="cv-dashboard1.html" class="">Preview &amp; Download</a>
+                        </button><hr class="mt-0">
+                      </div>
+                      <div class="block">
+                        <button type="button" class="btn btn-orange ml15" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Save As PDF <i class="fa fa-caret-down ml-5"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
+                           <a class="dropdown-item fs-15" href="#"> One Page </a>
+                           <a class="dropdown-item fs-15" href="#"> A4 Size </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- END Side Overlay Scroll Container -->
+            </aside>
+            <!-- END Side Overlay -->
+           
+            <nav id="sidebar">
+                <!-- Sidebar Scroll Container -->
+                <div id="sidebar-scroll">
+                    <!-- Sidebar Content -->
+                    <div class="sidebar-content">
+                        <!-- Side Header -->
+                        <div class="content-header content-header-fullrow px-15">
+                            <!-- Mini Mode -->
+                            <div class="content-header-section sidebar-mini-visible-b">
+                                <!-- Logo -->
+                                <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                    <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
+                                </span>
+                                <!-- END Logo -->
+                            </div>
+                            <!-- END Mini Mode -->
+
+                            <!-- Normal Mode -->
+                            <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                                <!-- Close Sidebar, Visible only on mobile screens -->
+                                <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
+                                	<!--<button type="button" class="btn side-btn f-right mob-dis" data-toggle="layout" data-action="sidebar_close">
+                                    X
+                                </button>-->
+                                <!-- END Close Sidebar -->
+
+                                <!-- Logo -->
+                                <div class="content-header-item">
+                                    <h3 class="side-h3">Resume Customizer</h3>
+                                    <h4 class="side-h4">Customize & Preview in Real Time</h4>
+                                </div>
+                                <!-- END Logo -->
+                            </div>
+                            <!-- END Normal Mode -->
+                        </div>
+                        <!-- END Side Header -->
+
+                        <!-- Side Navigation -->
+                        <div class="content-side content-side-full">
+                           
+							<div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3 mt34">Template</h3>
+							  </div>
+							  <div class="col-md-6 d-in">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="side-a">Template Name</span>
+								</label>
+								<label class="container1 mt-12">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="side-a">Language</span>
+								</label>
+							  </div>
+							  <div class="col-md-6 d-in">
+							  	<button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="modal" data-target="#template">
+                           <a href="#" class="side-btn f-right"><span>Change Template</span></a>
+                        </button>
+								
+							  </div>
+						    </div>
+                          
+                          	<div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Color</h3>
+							  </div>                            
+							</div> 
+                         
+                            <div class="row sp15">
+                              <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								    <span class="sli-bor sactive"> <span class="side-c1">.</span><span class="side-c1a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c2">.</span><span class="side-c2a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c3">.</span><span class="side-c3a">.</span> </span>
+								</label>							    
+							  </div>
+							  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c4">.</span><span class="side-c4a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c5">.</span><span class="side-c5a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c6">.</span><span class="side-c6a">.</span> </span>
+								</label>							    
+							  </div>
+							</div>                                              
+                          
+                          	<div class="row pt-15 sp15">
+                              <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c7">.</span><span class="side-c7a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c8">.</span><span class="side-c8a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c9">.</span><span class="side-c9a">.</span> </span>
+								</label>							    
+							  </div>
+							  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c10">.</span><span class="side-c10a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c11">.</span><span class="side-c11a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c12">.</span><span class="side-c12a">.</span> </span>
+								</label>							    
+							  </div>
+							</div>
+                         
+                         	<div class="row pt-15 sp15">
+                              <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c13">.</span><span class="side-c13a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c14">.</span><span class="side-c14a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c15">.</span><span class="side-c15a">.</span> </span>
+								</label>							    
+							  </div>
+							  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c16">.</span><span class="side-c16a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c17">.</span><span class="side-c17a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="sli-bor"> <span class="side-c18">.</span><span class="side-c18a">.</span> </span>
+								</label>							    
+							  </div>
+							</div>
+                          
+							<!--<div class="row sp15">						  
+							  <div class="col-md-2 d-flex">				    
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c1">.</span><span class="side-c1a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c2">.</span><span class="side-c2a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c3">.</span><span class="side-c3a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c4">.</span><span class="side-c4a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c5">.</span><span class="side-c5a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c6">.</span><span class="side-c6a">.</span> </span></a>
+							  </div>
+							</div>-->
+
+							<!--<div class="row sp15 pt-5">
+							  <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c7">.</span><span class="side-c7a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c8">.</span><span class="side-c8a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c9">.</span><span class="side-c9a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c10">.</span><span class="side-c10a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c11">.</span><span class="side-c11a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c12">.</span><span class="side-c12a">.</span> </span></a>
+							  </div>
+							</div>-->
+
+							<!--<div class="row sp15 pt-5">
+							  <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c13">.</span><span class="side-c13a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c14">.</span><span class="side-c14a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c15">.</span><span class="side-c15a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c16">.</span><span class="side-c16a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c17">.</span><span class="side-c17a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c18">.</span><span class="side-c18a">.</span> </span></a>
+							  </div> 
+							</div>-->
+              
+              				<div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Layout</h3>
+							  </div>                            
+							</div> 
+               
+							<div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="column-h pb-3">Column</h3>
+							  </div>
+							</div>
+						    <div class="row sp15">						    
+							  <div class="col-md-6 d-in">
+							    <label class="container1">
+								  <input type="radio" name="radio" id="" value="">
+								  <span class="colu-bor colu-active"> <span><img src="assets/img/cv/two-column.png" class="img-fluid mt-5i" alt=""></span> <span class="column-otline">Two Column</span> </span>
+								</label>
+							  </div>	
+							  <div class="col-md-6 d-in">
+								<label class="container1">
+								  <input type="radio" name="radio" id="" value="">
+								  <span class="colu-bor"> <span><img src="assets/img/cv/one-column.png" class="img-fluid mt-5i" alt=""></span> <span class="column-otline">One Column</span> </span>
+								</label>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-12 pt36">
+								<h3 class="column-h">Change Section Order</h3>
+								<p class="fs-12h fw500 gray">Drag and Move section up and down or left and right</p>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in pb17">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="move-stn">
+								    <span class="fs-13 fw500 gray pr-3">Section Name </span>
+								    <span class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </span>
+								  </span>
+								</label>
+							  </div>
+							  <div class="col-md-6 d-in pb17">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="move-stn">
+								    <span class="fs-13 fw500 gray pr-3">Section Name </span>
+								    <span class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </span>
+								  </span>
+								</label>
+							  </div>
+							</div>
+					    
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in pb17">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="move-stn">
+								    <span class="fs-13 fw500 gray pr-3">Section Name </span>
+								    <span class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </span>
+								  </span>
+								</label>
+							  </div>
+							  <div class="col-md-6 d-in pb17">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="move-stn">
+								    <span class="fs-13 fw500 gray pr-3">Section Name </span>
+								    <span class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </span>
+								  </span>
+								</label>
+							  </div>
+							</div>
+					    
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in pb17">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="move-stn">
+								    <span class="fs-13 fw500 gray pr-3">Section Name </span>
+								    <span class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </span>
+								  </span>
+								</label>
+							  </div>
+							  <div class="col-md-6 d-in pb17">
+						        <label class="container1">
+								  <input type="radio" name="radio" id="" value="">								  
+							      <span class="move-stn">
+								    <span class="fs-13 fw500 gray pr-3">Section Name </span>
+								    <span class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </span>
+								  </span>
+								</label>
+							  </div>
+							</div>
+                
+                           <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Background</h3>
+							  </div>                            
+							</div>
+                           
+                           <div class="row sp15">
+							  <div class="col-md-12">              	   
+								<section class="customer-logos slider">						          
+							      <label class="container1">
+								    <input type="radio" name="radio">
+								    <span class="slide"> <img src="assets/img/cv/side-slide-bg1.png"> </span>
+								  </label>
+								  <label class="container1">
+								    <input type="radio" name="radio">
+								    <span class="slide"> <img src="assets/img/cv/side-slide-bg2.png"> </span>
+								  </label>
+								  <label class="container1">
+								    <input type="radio" name="radio">
+								    <span class="slide"> <img src="assets/img/cv/side-slide-bg3.png"> </span>
+								  </label>
+								  <label class="container1">
+								    <input type="radio" name="radio">
+								    <span class="slide"> <img src="assets/img/cv/side-slide-bg4.png"> </span>
+								  </label>
+								  <label class="container1">
+								    <input type="radio" name="radio">
+								    <span class="slide"> <img src="assets/img/cv/side-slide-bg5.png"> </span>
+								  </label>
+								  <label class="container1">
+								    <input type="radio" name="radio">
+								    <span class="slide"> <img src="assets/img/cv/side-slide-bg6.png"> </span>
+								  </label>
+								</section>             	   
+							  </div>
+						   </div>
+                         
+                           <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Header Section</h3>
+							  </div>                            
+							</div>
+                          
+							<div class="row sp15">
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw600">Name Size</label>
+									<select class="form-control w-75" id="exampleFormControlSelect1">
+									  <option class="gray">S</option>
+									  <option class="gray" selected>M</option>
+									  <option class="gray">L</option>
+									  <option class="gray">XL</option>
+									</select>
+								  </div>
+							  </div>
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw600">Name Style</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>Lowercase</option>
+									  <option selected>Capitalize</option>
+									  <option>Uppercase</option>
+									  <option>Inherit</option>
+									  <option>Inital</option>	
+									</select>
+								  </div>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in">
+							    <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox1" value="option1">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fs-13"> Greyscale Image</span>
+                                </label>
+							  </div>
+							  <div class="col-md-6 d-in">
+							    <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox2" checked value="option2">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fs-13"> Hide Image</span>
+                                </label>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in">
+							    <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox3" value="option3">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fs-13"> Hide Contact Icons</span>
+                                </label>
+							  </div>
+							</div>
+                           
+                            <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Heading Section</h3>
+							  </div>                            
+							</div>
+                          
+							<div class="row sp15">
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw600">Font Style</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>Lowercase</option>
+									  <option selected>Capitalize</option>
+									  <option>Uppercase</option>
+									  <option>Inherit</option>
+									  <option>Inital</option>	
+									</select>
+								  </div>
+							  </div>
+							  <div class="col-md-6 d-in pt46">
+							   <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox4" value="option4">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fs-13"> Hide Heading Icons</span>
+                                </label>
+							  </div>  
+							</div>
+                          
+                          
+                            <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Font</h3>
+							  </div>                            
+							</div>
+                          
+							<div class="row sp15">
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw600">Font</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option selected>Raleway</option>
+									  <option>Roboto</option>
+									  <option>Garamond</option>
+									  <option>Lora</option>
+									  <option>Lusitana</option>	
+									</select>
+								  </div>
+							  </div>
+
+							  <div class="col-md-4 d-in">
+								  <div class="form-group">
+									<label class="gray fw500">Font Size</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option>
+									  <option>9</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									  <option>13</option>
+									  <option>14</option>
+									  <option>15</option>
+									  <option selected>16</option>
+									  <option>17</option>
+									  <option>18</option>
+									  <option>19</option>
+									  <option>20</option>
+									  <option>21</option>
+									  <option>22</option>
+									  <option>23</option>
+									  <option>24</option>
+									  <option>25</option>
+									  <option>26</option>
+									  <option>27</option>
+									  <option>28</option>
+									  <option>29</option>
+									  <option>30</option>
+									  <option>31</option>
+									  <option>32</option>	
+									</select>
+								  </div>
+							  </div> 
+
+							  <div class="col-md-2">&nbsp;</div>   
+							</div>
+                           
+                            <!--<ul class="nav-main">
+                                <li>
+                                    <a href="support.html"><i class="si si-support"></i>
+                                    <span class="sidebar-mini-hide">Support</span></a>
+                                </li>
+                            </ul>-->
+                        </div>
+                        <!-- END Side Navigation -->
+                    </div>
+                    <!-- Sidebar Content -->
+                </div>
+                <!-- END Sidebar Scroll Container -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header ch1">
+                    <!-- Left Section -->
+                    <div class="content-header-section">						
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                           <img src="assets/img/cv/brush.png" class="img-fluid" alt="">
+                        </button>
+						
+                        <button type="button" class="btn btn-circle btn-dual-secondary desk-dis border_bott">
+                            <a href="#" class="">Content</a>
+                        </button>
+                        
+                        <button type="button" class="btn btn-circle btn-dual-secondary desk-dis border_bott" data-toggle="modal" data-target="#template">
+                             <a href="#" class="">Change Template</a>
+                        </button>
+                        
+                        <button type="button" class="btn btn-circle btn-dual-secondary desk-dis border_bott">
+                             <a href="#" class="">Preview & Download </a>
+                        </button>
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="content-header-section">
+                        <!-- User Dropdown -->
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-orange desk-dis" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Save As PDF<i class="fa fa-caret-down ml-5"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
+                                <a class="dropdown-item fs-15" href="#"> One Page </a>
+                                <a class="dropdown-item fs-15" href="#"> A4 Size </a>
+                            </div>
+                            <!-- Toggle Side Overlay -->
+                             <button type="button" class="btn p-0 mob-dis" data-toggle="layout" data-action="side_overlay_toggle">
+                               <img src="assets/img/cv/menu-bar.png" alt="">
+                             </button>
+                           <!-- END Toggle Side Overlay -->
+                        </div>
+                        <!-- END User Dropdown -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header">
+                    <div class="content-header content-header-fullrow">
+                        <form action="be_pages_generic_search.html" method="post">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <!-- Close Search Section -->
+                                    <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
+                                    <button type="button" class="btn btn-secondary" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <!-- END Close Search Section -->
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <!-- Please check out the Activity page under Elements category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Content -->
+               <div class="content w60" >
+
+                    <!-- CV Tabel -->
+                    
+                    <div class="block block-rounded marcelinecv-bg">
+					    <style>td, th {padding:0px; border:0px solid #e4e7e8} </style>
+						<table class="table-responsive">
+						  <tbody style="display:inline-table; width:100%;">
+							<tr>
+							  <td style="width:50%">
+								<h1 style="margin-left:40px; color:#3a51d5; font-family:&#39;Bell MT&#39;; font-size:37px; font-weight:500;margin-top:37px; line-height:1;margin-bottom:0;">
+								 MARCELINE<br>ANDERSON</h1>
+								<h3 style="margin-left:40px; color:#222; font-size:18px; font-weight:700">Executive Assistant</h3>
+							  </td>
+							  <td align="right" style="width:50%"><img src="img/cv-round.jpg" alt=""></td>
+							</tr>
+							<tr>
+							  <td style="width:50%; padding-top:80px;">
+								<h4 style="margin-left:40px;color:#3a51d5;margin-bottom:15px;letter-spacing:-1px;font-size: 17px;font-weight: 700;">
+								 PROFESSIONAL PROFILE
+								</h4>
+								<p style="margin-left:40px;color:#333;font-size: 10px;font-weight:500;line-height: 1.2;">
+								  Skilled Executive Assistant with more than 10 years experience <br>
+								  coordinating. planning, and supporting daily operational and<br>
+								  administrative functions.
+								</p><br>
+								<h4 style="margin-left:40px;color:#3a51d5;margin-bottom:15px;letter-spacing:-1px;font-size: 17px;font-weight: 700;">
+								 CONTACT DETAILS
+								</h4>
+								<ul style="margin-left:18px; color:#333; font-size:14px;">
+								  	<li style="color:#333; font-size:10px;">
+								  	  Home:123-456-7890
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Mobile:123-456-7890
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  hello@reallygreatsite.com
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  www.reallygreatsite.com
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  123 Anywhere Street, Any City, State, Country 12345
+								  	</li>
+								  </ul><br>
+								<h4 style="margin-left:40px;color:#3a51d5;margin-bottom:15px;letter-spacing:-1px;font-size: 17px;font-weight: 700;">
+								 QUALIFICATIONS
+								</h4>
+								<p style="margin-left:40px;color:#333;font-size: 10px;font-weight:500;line-height: 1.2;">
+								  Over a decade of service preparing well-researched and accurate<br>
+								  documents, managing busy calendars, and efficiently handling daily<br>
+								  office tasks
+								</p>								  
+							  </td>
+							  
+							  <td style="width:50%; padding:0px 30px; padding-top: 55px;padding-left: 50px;">
+								<h4 style="color:#3a51d5;margin-bottom:10px;letter-spacing:-1px;font-size: 17px;font-weight: 700;">
+								 WORK EXPERIENCE
+								</h4>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:13px; font-weight:800; font-style:italic;">
+								  Executive Assistant
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:11px; font-weight:500;">
+								  ABC San Dias (Jan.2014-Present)
+								  </p>
+                                  <ul style="padding-left:18px; padding-right:10px;">
+								  	<li style="color:#333; font-size:10px;">
+								  	  Provide administrative support to the CEO and other members of
+								  	  the executive team.
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Maintain CEO's calendar--plan meetings, teleconferences, and
+								  	  travel.
+								  	</li>
+								  </ul>
+								
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:13px; font-weight:800; font-style:italic;">
+								  Executive Assistant
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:11px; font-weight:500;">
+								  ABC San Dias (June 2009 - Jan. 2014)
+								  </p>
+                                  <ul style="padding-left:18px; padding-right:10px;">
+								  	<li style="color:#333; font-size:10px;">
+								  	  Supported firm's senior partner.
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Handled bank deposits and other accounting documents.
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Planned and coordinated PR initiatives, business events, and more.
+								  	</li>
+								  </ul>
+								<p></p><br><br><br>								
+							  </td>							  
+							</tr>
+							<tr>
+							  <td style="width:50%"><br><br>
+								<h4 style="margin-left:40px;color:#3a51d5;margin-bottom:15px;letter-spacing:-1px;font-size: 17px;font-weight: 700;">
+								 SKILLS AND ABILITIES
+								</h4>
+								<ul style="padding-left:55px; padding-right:10px;">
+								  	<li style="color:#333; font-size:10px;">
+								  	  Great communication and interpersonal skills
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Excellent organizational and multi-tasking skills
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Great writing skills
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Fluent in English and Spanish
+								  	</li>
+								  </ul>	<br><br><br><br><br><br>								  
+							  </td>
+							  
+							  <td style="width:50%; padding: 0px 30px;padding-left: 50px;"><br><br>
+								<h4 style="color:#3a51d5;margin-bottom:15px;letter-spacing:-1px;font-size: 17px;font-weight: 700;">
+								 PREVIOUS EDUCATION
+								</h4>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:13px; font-weight:800; font-style:italic;">
+								  Golden Oak University
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:11px; font-weight:500;">
+								  AAS in Business Management, Class of 2009
+								  </p><ul style="padding-left:18px; padding-right:10px;">
+								  	<li style="color:#333; font-size:10px;">
+								  	  Secretary for Golden Oak University's Student Marketing<br>
+								  	  Organization
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Member and Contributor for The Oakley News
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Member of the Writing Society
+								  	</li>
+								  </ul>
+								<p></p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:13px; font-weight:800; font-style:italic;">
+								  San Dias High School
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:11px; font-weight:500;">
+								  Graduated Class of 2005<br>Valedictorian
+								  </p><ul style="padding-left:18px; padding-right:10px;">
+								  	<li style="color:#333; font-size:10px;">
+								  	  Secretary, Entrepreneurship Club
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Secretary, Student Council
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Member, Culture Club
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Member, Spanish Club
+								  	</li>
+								  	<li style="color:#333; font-size:10px;">
+								  	  Member, Foreign Exchange Student Society
+								  	</li>
+								  </ul>
+								<p></p><br><br><br><br><br><br>							
+							  </td>	
+							  						  
+							</tr>
+						  </tbody>
+						</table>
+                    </div>
+                    <!-- END Orders -->
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <!--<footer id="page-footer" class="opacity-0" style="opacity: 1;">
+                <div class="content py-20 font-size-xs clearfix">
+                    <div class="float-right">
+                        Design by : <a class="font-w600" href="#" target="_blank">SSAK</a>
+                    </div>
+                    <div class="float-left">
+                        <a class="font-w600" href="#" target="_blank">CV</a> © 
+                        <span class="js-year-copy">2020</span>
+                    </div>
+                </div>
+            </footer>-->
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+        
+        <!--/ Select Template Model -->
+		 <div class="modal fade text-left" id="template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h3 class="text-center mcv-had">Template</h3>
+					<button type="button" class="close gray" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+				  <div class="row">
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv1.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv2.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv3.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+				  </div>
+
+				  <div class="row pt-5">
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv4.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv5.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv6.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+				  </div> 
+				</div>
+			</div>
+		  </div>
+		</div>
+
+        <!-- Codebase Core JS -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/popper.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/codebase.js"></script>
+        <script src="assets/js/slick.js"></script>
+        
+		<script>
+		  $(document).ready(function(){
+			 
+			 $('.customer-logos').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: true,
+				dots: false,
+				pauseOnHover: true,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+			 });
+		  });	
+		</script>
+       <script>
+		   
+		  $('.border_bott').on('click',function(){
+			  //$(a).removeClass('.orange1');
+			  $('.border_bott a').removeClass('orange1');			  
+			  $(this).children().addClass('orange1');
+		  });
+		</script>
+        
+    </body>
+</html>

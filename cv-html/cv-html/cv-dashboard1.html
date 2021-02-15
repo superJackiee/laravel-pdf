@@ -1,0 +1,919 @@
+<!doctype html>
+ <html lang="en" class="no-focus"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>CV | Dashboard</title>
+        <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+       
+        <link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/style.css">
+    </head>
+    
+    <body>
+        <!-- Page Container -->
+        <div id="page-container" class="side-scroll page-header-modern main-content-boxed">
+
+            <!-- Side Overlay-->
+            <aside id="side-overlay">
+                <!-- Side Overlay Scroll Container -->
+                <div id="side-overlay-scroll">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow">
+                        <div class="content-header-section align-parent">
+                            <!-- Close Side Overlay -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
+                                <span class="orange"><strong>x</strong></span>
+                            </button>
+                            <!-- END Close Side Overlay -->
+                        </div>
+                    </div>
+                    <!-- END Side Header -->
+
+                    <div class="content-side">
+                      <div class="block">
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout1">
+                           <a href="#" class="">Content</a>
+                        </button><hr class="mt-0">
+                      </div>
+                      <div class="block">
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="modal" data-target="#template">
+                           <a href="#" class="">Change Template</a>
+                        </button><hr class="mt-0">
+                      </div>
+                      <div class="block">
+                        <button type="button" class="btn btn-circle btn-dual-secondary">
+                           <a href="cv-dashboard1.html" class="">Preview &amp; Download</a>
+                        </button><hr class="mt-0">
+                      </div>
+                      <div class="block">
+                        <button type="button" class="btn btn-orange ml15" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Save As PDF <i class="fa fa-caret-down ml-5"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
+                           <a class="dropdown-item fs-15" href="#"> One Page </a>
+                           <a class="dropdown-item fs-15" href="#"> A4 Size </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- END Side Overlay Scroll Container -->
+            </aside>
+            <!-- END Side Overlay -->
+           
+            <nav id="sidebar">
+                <!-- Sidebar Scroll Container -->
+                <div id="sidebar-scroll">
+                    <!-- Sidebar Content -->
+                    <div class="sidebar-content">
+                        <!-- Side Header -->
+                        <div class="content-header content-header-fullrow px-15">
+                            <!-- Mini Mode -->
+                            <div class="content-header-section sidebar-mini-visible-b">
+                                <!-- Logo -->
+                                <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                    <span class="text-dual-primary-dark">c</span><span class="text-primary">b</span>
+                                </span>
+                                <!-- END Logo -->
+                            </div>
+                            <!-- END Mini Mode -->
+
+                            <!-- Normal Mode -->
+                            <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                                <!-- Close Sidebar, Visible only on mobile screens -->
+                                <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
+                                	<!--<button type="button" class="btn side-btn f-right mob-dis" data-toggle="layout" data-action="sidebar_close">
+                                    X
+                                </button>-->
+                                <!-- END Close Sidebar -->
+
+                                <!-- Logo -->
+                                <div class="content-header-item">
+                                    <h3 class="side-h3">Resume Customizer</h3>
+                                    <h4 class="side-h4">Customize & Preview in Real Time</h4>
+                                </div>
+                                <!-- END Logo -->
+                            </div>
+                            <!-- END Normal Mode -->
+                        </div>
+                        <!-- END Side Header -->
+
+                        <!-- Side Navigation -->
+                        <div class="content-side content-side-full">
+                           
+							<div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3 mt34">Template</h3>
+							  </div>
+							  <div class="col-md-6 d-in">
+								<a href="#" class="side-a">Template Name</a>
+								<a href="#" class="side-a">Language</a>
+							  </div>
+							  <div class="col-md-6 d-in">
+								<a href="#" class="side-btn f-right"><span>Change Template</span></a>
+							  </div>
+						    </div>
+                          
+                          	<div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Color</h3>
+							  </div>                            
+							</div> 
+                         
+                            <div class="row sp15">
+                              <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c1">.</span><span class="side-c1a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c2">.</span><span class="side-c2a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c3">.</span><span class="side-c3a">.</span> </span>
+								</label>							    
+							  </div>
+							  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c4">.</span><span class="side-c4a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c5">.</span><span class="side-c5a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c6">.</span><span class="side-c6a">.</span> </span>
+								</label>							    
+							  </div>
+							</div>                                              
+                          
+                          	<div class="row pt-15 sp15">
+                              <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c7">.</span><span class="side-c7a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c8">.</span><span class="side-c8a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c9">.</span><span class="side-c9a">.</span> </span>
+								</label>							    
+							  </div>
+							  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c10">.</span><span class="side-c10a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c11">.</span><span class="side-c11a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c12">.</span><span class="side-c12a">.</span> </span>
+								</label>							    
+							  </div>
+							</div>
+                         
+                         	<div class="row pt-15 sp15">
+                              <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c13">.</span><span class="side-c13a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c14">.</span><span class="side-c14a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c15">.</span><span class="side-c15a">.</span> </span>
+								</label>							    
+							  </div>
+							  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c16">.</span><span class="side-c16a">.</span> </span>
+								</label>							    
+							  </div>
+					      	  <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c17">.</span><span class="side-c17a">.</span> </span>
+								</label>							    
+							  </div>
+						      <div class="col-md-2 d-flex">						    
+								<label class="container1">
+								  <input type="radio" name="radio">
+								  <span class="box3d"> <span class="side-c18">.</span><span class="side-c18a">.</span> </span>
+								</label>							    
+							  </div>
+							</div>
+                          
+							<!--<div class="row sp15">						  
+							  <div class="col-md-2 d-flex">				    
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c1">.</span><span class="side-c1a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c2">.</span><span class="side-c2a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c3">.</span><span class="side-c3a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c4">.</span><span class="side-c4a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c5">.</span><span class="side-c5a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c6">.</span><span class="side-c6a">.</span> </span></a>
+							  </div>
+							</div>-->
+
+							<!--<div class="row sp15 pt-5">
+							  <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c7">.</span><span class="side-c7a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c8">.</span><span class="side-c8a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c9">.</span><span class="side-c9a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c10">.</span><span class="side-c10a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c11">.</span><span class="side-c11a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c12">.</span><span class="side-c12a">.</span> </span></a>
+							  </div>
+							</div>-->
+
+							<!--<div class="row sp15 pt-5">
+							  <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c13">.</span><span class="side-c13a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c14">.</span><span class="side-c14a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c15">.</span><span class="side-c15a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c16">.</span><span class="side-c16a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c17">.</span><span class="side-c17a">.</span> </span></a>
+							  </div>
+							   <div class="col-md-2 d-flex">
+								<a href="#" class="text-center sli-bor"><span class="box3d"> <span class="side-c18">.</span><span class="side-c18a">.</span> </span></a>
+							  </div> 
+							</div>-->
+              
+              				<div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Layout</h3>
+							  </div>                            
+							</div> 
+               
+							<div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="column-h pb-3">Column</h3>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in">
+								<a href="#" class="text-center colu-bor"><span><img src="assets/img/cv/two-column.png" class="img-fluid mt-5i" alt=""></span> <span class="column-otline">Two Column</span> </a>
+							  </div>	
+							  <div class="col-md-6 d-in">
+								<a href="#" class="text-center colu-bor"><span><img src="assets/img/cv/one-column.png" class="img-fluid mt-5i" alt=""></span> <span class="column-otline">One Column</span> </a>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-12 pt36">
+								<h3 class="column-h">Change Section Order</h3>
+								<p class="fs-12h fw500 gray">Drag and Move section up and down or left and right</p>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in">
+								<span class="fs-13 fw500 gray pr-3">Section Name </span>
+								<a href="#" class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </a>
+							  </div>
+							  <div class="col-md-6 d-in">
+								<span class="fs-13 fw500 gray pr-3">Section Name </span>
+								<a href="#" class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </a>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in pt-3">
+								<span class="fs-13 fw500 gray pr-3">Section Name </span>
+								<a href="#" class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </a>
+							  </div>
+							  <div class="col-md-6 d-in pt-3">
+								<span class="fs-13 fw500 gray pr-3">Section Name </span>
+								<a href="#" class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </a>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in pt-3">
+								<span class="fs-13 fw500 gray pr-3">Section Name </span>
+								<a href="#" class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </a>
+							  </div>
+							  <div class="col-md-6 d-in pt-3 pb-3">
+								<span class="fs-13 fw500 gray pr-3">Section Name </span>
+								<a href="#" class="text-center"> <img src="assets/img/cv/move.png" class="img-fluid" alt=""> </a>
+							  </div>
+							</div>
+                
+                           <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Background</h3>
+							  </div>                            
+							</div>
+                           
+                           <div class="row sp15">
+							  <div class="col-md-12">              	   
+								<section class="customer-logos slider">
+								  <a href="#" class="slide"><img src="assets/img/cv/side-slide-bg1.png"></a>
+								  <a href="#" class="slide"><img src="assets/img/cv/side-slide-bg2.png"></a>
+								  <a href="#" class="slide"><img src="assets/img/cv/side-slide-bg3.png"></a>
+								  <a href="#" class="slide"><img src="assets/img/cv/side-slide-bg4.png"></a>
+								  <a href="#" class="slide"><img src="assets/img/cv/side-slide-bg5.png"></a>
+								  <a href="#" class="slide"><img src="assets/img/cv/side-slide-bg6.png"></a>
+								</section>             	   
+							  </div>
+						   </div>
+                         
+                           <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Header Section</h3>
+							  </div>                            
+							</div>
+                          
+							<div class="row sp15">
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw500">Name Size</label>
+									<select class="form-control w-75" id="exampleFormControlSelect1">
+									  <option class="gray">S</option>
+									  <option class="gray" selected>M</option>
+									  <option class="gray">L</option>
+									  <option class="gray">XL</option>
+									</select>
+								  </div>
+							  </div>
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw500">Name Style</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>Lowercase</option>
+									  <option selected>Capitalize</option>
+									  <option>Uppercase</option>
+									  <option>Inherit</option>
+									  <option>Inital</option>	
+									</select>
+								  </div>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in">
+							    <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox1" value="option1">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fw500"> Greyscale Image</span>
+                                </label>
+							  </div>
+							  <div class="col-md-6 d-in">
+							    <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox2" value="option2">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fw500"> Hide Image</span>
+                                </label>
+							  </div>
+							</div>
+						    <div class="row sp15">
+							  <div class="col-md-6 d-in">
+							    <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox3" value="option3">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fw500"> Hide Contact Icons</span>
+                                </label>
+							  </div>
+							</div>
+                           
+                            <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Heading Section</h3>
+							  </div>                            
+							</div>
+                          
+							<div class="row sp15">
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw500">Font Style</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>Lowercase</option>
+									  <option selected>Capitalize</option>
+									  <option>Uppercase</option>
+									  <option>Inherit</option>
+									  <option>Inital</option>	
+									</select>
+								  </div>
+							  </div>
+							  <div class="col-md-6 d-in pt46">
+							   <label class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input" id="checkbox4" value="option4">
+                                  <span class="custom-control-indicator"></span>
+                                  <span class="custom-control-description gray fw500"> Hide Heading Icons</span>
+                                </label>
+							  </div>  
+							</div>
+                          
+                          
+                            <div class="row sp15"> <div class="col-md-12"> <p class="side-line"></p> </div> </div>
+                          	
+                            <div class="row sp15">
+							  <div class="col-md-12">
+								<h3 class="side-h3">Font</h3>
+							  </div>                            
+							</div>
+                          
+							<div class="row sp15">
+							  <div class="col-md-6 d-in">
+								  <div class="form-group">
+									<label class="gray fw500">Font</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option selected>Raleway</option>
+									  <option>Roboto</option>
+									  <option>Garamond</option>
+									  <option>Lora</option>
+									  <option>Lusitana</option>	
+									</select>
+								  </div>
+							  </div>
+
+							  <div class="col-md-4 d-in">
+								  <div class="form-group">
+									<label class="gray fw500">Font Size</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option>
+									  <option>9</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									  <option>13</option>
+									  <option>14</option>
+									  <option>15</option>
+									  <option selected>16</option>
+									  <option>17</option>
+									  <option>18</option>
+									  <option>19</option>
+									  <option>20</option>
+									  <option>21</option>
+									  <option>22</option>
+									  <option>23</option>
+									  <option>24</option>
+									  <option>25</option>
+									  <option>26</option>
+									  <option>27</option>
+									  <option>28</option>
+									  <option>29</option>
+									  <option>30</option>
+									  <option>31</option>
+									  <option>32</option>	
+									</select>
+								  </div>
+							  </div> 
+
+							  <div class="col-md-2">&nbsp;</div>   
+							</div>
+                           
+                            <!--<ul class="nav-main">
+                                <li>
+                                    <a href="support.html"><i class="si si-support"></i>
+                                    <span class="sidebar-mini-hide">Support</span></a>
+                                </li>
+                            </ul>-->
+                        </div>
+                        <!-- END Side Navigation -->
+                    </div>
+                    <!-- Sidebar Content -->
+                </div>
+                <!-- END Sidebar Scroll Container -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header ch1">
+                    <!-- Left Section -->
+                    <div class="content-header-section">						
+                        <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                           <img src="assets/img/cv/brush.png" class="img-fluid" alt="">
+                        </button>
+						
+                        <button type="button" class="btn btn-circle btn-dual-secondary desk-dis" data-toggle="layout1">
+                            <a href="#" class="">Content</a>
+                        </button>
+                        
+                        <button type="button" class="btn btn-circle btn-dual-secondary desk-dis" data-toggle="modal" data-target="#template">
+                             <a href="#" class="">Change Template</a>
+                        </button>
+                        
+                        <button type="button" class="btn btn-circle btn-dual-secondary desk-dis">
+                             <a href="#" class="orange">Preview & Download</a>
+                        </button>
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="content-header-section">
+                        <!-- User Dropdown -->
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-orange desk-dis" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Save As PDF<i class="fa fa-caret-down ml-5"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
+                                <a class="dropdown-item fs-15" href="#"> One Page </a>
+                                <a class="dropdown-item fs-15" href="#"> A4 Size </a>
+                            </div>
+                            <!-- Toggle Side Overlay -->
+                             <button type="button" class="btn p-0 mob-dis" data-toggle="layout" data-action="side_overlay_toggle">
+                               <img src="assets/img/cv/menu-bar.png" alt="">
+                             </button>
+                           <!-- END Toggle Side Overlay -->
+                        </div>
+                        <!-- END User Dropdown -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header">
+                    <div class="content-header content-header-fullrow">
+                        <form action="be_pages_generic_search.html" method="post">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <!-- Close Search Section -->
+                                    <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
+                                    <button type="button" class="btn btn-secondary" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <!-- END Close Search Section -->
+                                </span>
+                                <input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-secondary">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <!-- Please check out the Activity page under Elements category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Content -->
+                <div class="content w70">
+
+                    <!-- CV Tabel -->
+                    
+                    <div class="block block-rounded marcelinecv-bg">
+					    <style>td, th {padding:0px; border:0px solid #e4e7e8} </style>
+						<table class="table-responsive">
+						  <tbody style="display:inline-table; width:100%;">
+							<tr>
+							  <td style="width:50%">
+								<h1 style="margin-left:40px; color:#3a51d5; font-family:'Bell MT'; font-size:46px; font-weight:500;">
+								 MARCELINE<br>ANDERSON</h1>
+								<h3 style="margin-left:40px; color:#222; font-size:20px; font-weight:500">Executive Assistant</h3>
+							  </td>
+							  <td align="right" style="width:50%"><img src="assets/img/cv/cv-round.png" alt=""></td>
+							</tr>
+							<tr>
+							  <td style="width:50%"><br><br>
+								<h4 style="margin-left:40px; color:#3a51d5; margin-bottom:20px; letter-spacing:-1px; font-size:20px;">
+								 PROFESSIONAL PROFILE
+								</h4>
+								<p style="margin-left:40px; color:#333; font-size:14px;">
+								  Skilled Executive Assistant with more than 10 years experience <br>
+								  coordinating. planning, and supporting daily operational and<br>
+								  administrative functions.
+								</p><br>
+								<h4 style="margin-left:40px; color:#3a51d5; margin-bottom:20px; 
+								 letter-spacing:-1px; font-size:20px;">
+								 CONTACT DETAILS
+								</h4>
+								<ul style="margin-left:40px; color:#333; font-size:14px;">
+								  	<li style="color:#333; font-size:14px;">
+								  	  Home:123-456-7890
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Mobile:123-456-7890
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  hello@reallygreatsite.com
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  www.reallygreatsite.com
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  123 Anywhere Street, Any City, State, Country 12345
+								  	</li>
+								  </ul><br>
+								<h4 style="margin-left:40px; color:#3a51d5; margin-bottom:20px; 
+								 letter-spacing:-1px; font-size:20px;">
+								 QUALIFICATIONS
+								</h4>
+								<p style="margin-left:40px; color:#333; font-size:14px;">
+								  Over a decade of service preparing well-researched and accurate<br>
+								  documents, managing busy calendars, and efficiently handling daily<br>
+								  office tasks
+								</p>								  
+							  </td>
+							  
+							  <td style="width:50%">
+								<h4 style="margin-right:40px; color:#3a51d5; margin-bottom:20px; 
+								 letter-spacing:-1px; font-size:20px;">
+								 WORK EXPERIENCE
+								</h4>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:18px; font-weight:500; font-style:italic;">
+								  Executive Assistant
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:14px;">
+								  ABC San Dias (Jan.2014-Present)
+								  </p><ul>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Provide administrative support to the CEO and other members of<br>
+								  	  the executive team.
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Maintain CEO's calendar--plan meetings, teleconferences, and<br>
+								  	  travel.
+								  	</li>
+								  </ul>
+								<p></p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:18px; font-weight:500; font-style:italic;">
+								  Executive Assistant
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:14px;">
+								  ABC San Dias (June 2009 - Jan. 2014)
+								  </p><ul>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Supported firm's senior partner.
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Handled bank deposits and other accounting documents.
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Planned and coordinated PR initiatives, business events, and more.
+								  	</li>
+								  </ul>
+								<p></p><br><br><br>								
+							  </td>							  
+							</tr>
+							<tr>
+							  <td style="width:50%"><br><br>
+								<h4 style="margin-left:40px; color:#3a51d5; margin-bottom:20px; 
+								 letter-spacing:-1px; font-size:20px;">
+								 SKILLS AND ABILITIES
+								</h4>
+								<ul style="margin-left:40px; color:#333; font-size:14px;">
+								  	<li style="color:#333; font-size:14px;">
+								  	  Great communication and interpersonal skills
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Excellent organizational and multi-tasking skills
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Great writing skills
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Fluent in English and Spanish
+								  	</li>
+								  </ul>	<br><br><br><br><br><br>								  
+							  </td>
+							  
+							  <td style="width:50%"><br><br>
+								<h4 style="margin-right:40px; color:#3a51d5; margin-bottom:20px; 
+								 letter-spacing:-1px; font-size:20px;">
+								 PREVIOUS EDUCATION
+								</h4>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:18px; font-weight:500; font-style:italic;">
+								  Golden Oak University
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:14px;">
+								  AAS in Business Management, Class of 2009
+								  </p><ul>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Secretary for Golden Oak University's Student Marketing<br>
+								  	  Organization
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Member and Contributor for The Oakley News
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Member of the Writing Society
+								  	</li>
+								  </ul>
+								<p></p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:18px; font-weight:500; font-style:italic;">
+								  San Dias High School
+								</p>
+								<p style="margin-right:40px; margin-bottom:5px; color:#333; font-size:14px;">
+								  Graduated Class of 2005<br>Valedictorian
+								  </p><ul>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Secretary, Entrepreneurship Club
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Secretary, Student Council
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Member, Culture Club
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Member, Spanish Club
+								  	</li>
+								  	<li style="color:#333; font-size:14px;">
+								  	  Member, Foreign Exchange Student Society
+								  	</li>
+								  </ul>
+								<p></p><br><br><br><br><br><br>							
+							  </td>	
+							  						  
+							</tr>
+						  </tbody>
+						</table>
+                    </div>
+                    <!-- END Orders -->
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <!--<footer id="page-footer" class="opacity-0" style="opacity: 1;">
+                <div class="content py-20 font-size-xs clearfix">
+                    <div class="float-right">
+                        Design by : <a class="font-w600" href="#" target="_blank">SSAK</a>
+                    </div>
+                    <div class="float-left">
+                        <a class="font-w600" href="#" target="_blank">CV</a> © 
+                        <span class="js-year-copy">2020</span>
+                    </div>
+                </div>
+            </footer>-->
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+        
+        <!--/ Select Template Model -->
+		 <div class="modal fade text-left" id="template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h3 class="text-center mcv-had">Template</h3>
+					<button type="button" class="close gray" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+				  <div class="row">
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv1.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv2.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv3.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+				  </div>
+
+				  <div class="row pt-5">
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv4.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv5.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+					<div class="col-md-4 text-center">
+					  <img src="assets/img/cv/mcv6.png" class="img-fluid mcv-img" alt="">
+					  <h3 class="mcv-h">Template Name</h3>
+					  <a href="#" class="mcv-btn"><span>Use this template</span></a> <br/> <br/> <br/>
+					</div>
+				  </div> 
+				</div>
+			</div>
+		  </div>
+		</div>
+
+        <!-- Codebase Core JS -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/popper.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/codebase.js"></script>
+        <script src="assets/js/slick.js"></script>
+		<script>
+		  $(document).ready(function(){
+			 $('.customer-logos').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1500,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+			 });
+		  });	
+		</script>
+        
+    </body>
+</html>
